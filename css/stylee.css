@@ -1,0 +1,780 @@
+/*start Genral css stayles */
+:root{
+    --mainColor:#0078ff;
+    --whait:#fff;
+    --black:#000;
+    --bg:#F5F5F5;
+    --gray:#4e4e4e;
+    --asblack:#1e1e1e;
+    --bg-border: rgba(255, 255, 255, 0.558);
+    --bg-lay:rgba(0, 120, 255,.8) ;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* start heading section */
+.heading h2{
+    font-size: 3.3rem;
+    font-weight: 700;
+    position: relative;
+    /* width: fit-content; */
+    display: inline-block;
+    color: var(--asblack);
+}
+
+.heading p{
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+}
+.heading p::after{
+    content: "";
+    position: absolute;
+    left:48%;
+    right: 48%;
+    top: 120%;
+    height: 4px;
+    background-color: var(--mainColor);
+}
+/* end heading section */
+/*end Genral css stayles */
+/* ==================================start navbar=================================== */
+.nav-logo ,.nav-item a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--whait);
+}
+.nav-logo:hover , .nav-logo:focus{
+    color: var(--whait);
+}
+.nav-item a:hover{
+    color: var(--whait);
+}
+.nav-item a:focus{
+    color: var(--whait);
+}
+.nav-logo{
+    font-size: 1.8rem;
+}
+.after{
+    position: relative;
+}
+.after::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    right: 20px;
+    width: 0;
+    height: 3px;
+    background-color: var(--whait);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -ms-transition: all .7s;
+    -o-transition: all .7s;
+}
+.after:hover.after:after{
+    width: 80%;
+}
+.dropdown-item{
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--gray) !important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.dropdown-menu a:hover{
+    color: var(--mainColor) !important;
+    background-color: transparent;
+}
+.navbar-toggler i{
+    color: var(--whait);
+}
+/* ==================================start header=================================== */
+.header {
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.layout{
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--whait);
+    position: relative;
+    width: fit-content;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    animation: en infinite 5s ;
+    -webkit-animation: en  15s infinite;
+}
+@keyframes en {
+    1%{
+        content: "|";
+    }
+
+    2%{
+        content: "D|";
+    }
+    
+    3%{
+        content: "De|";
+    }
+    4%{
+        content: "Dev|";
+    }
+    5%{
+        content: "Deve|";
+    }
+    
+    6%{
+        content: "Devl|";
+    }
+    7%{
+        content: "Develo|";
+    }
+    
+    8%{
+        content: "Develop|";
+    }
+    
+    9%{
+        content: "Develope|";
+    }
+    10%{
+        content: "Developer|";
+    }
+    11%{
+        content: "Develope|";
+    }
+    
+    12%{
+        content: "Develop|";
+    }
+    13%{
+        content: "Develo|";
+    }
+    14%{
+        content: "Devel|";
+    }
+    15%{
+        content: "Deve|";
+    }
+    16%{
+        content: "Dev|";
+    }
+    
+    17%{
+        content: "De|";
+    }
+    18%{
+        content: "D|";
+    }
+    19%{
+        content: "|";
+    }
+    20%{
+        content: "P|";
+    }
+    21%{
+        content: "Ph|";
+    }
+    22%{
+        content: "Pho|";
+    }
+    
+    23%{
+        content: "Phot|";
+    }
+    24%{
+        content: "Photo|";
+    }
+    25%{
+        content: "Photog|";
+    }
+    26%{
+        content: "Photogr|";
+    }
+    27%{
+        content: "Photogra|";
+    }
+    28%{
+        content: "Photograp|";
+    }
+    29%{
+        content: "Photograph|";
+    }
+    30%{
+        content: "Photographe|";
+    }
+    31%{
+        content: "Photographe|";
+    }
+    
+    32%{
+        content: "Photographer|";
+    }
+    33%{
+        content: "Photographe|";
+    }
+    34%{
+        content: "Photograph|";
+    }
+    35%{
+        content: "Photograp|";
+    }
+    36%{
+        content: "Photogra|";
+    }
+    37%{
+        content: "Photogr|";
+    }
+    38%{
+        content: "Photog|";
+    }
+    39%{
+        content: "Photo|";
+    }
+    40%{
+        content: "Phot|";
+    }
+    41%{
+        content: "Pho|";
+    }
+    42%{
+        content: "Ph|";
+    }
+    43%{
+        content: "P|";
+    }
+    44%{
+        content: "|";
+    }
+    45%{
+        content: "D|";
+    }
+    46%{
+        content: "De|";
+    }
+    47%{
+        content: "Des|";
+    }
+    48%{
+        content: "Desi|";
+    }
+    49%{
+        content: "Desig|";
+    }
+    50%{
+        content: "Design|";
+    }
+    51%{
+        content: "Designe|";
+    }
+    52%{
+        content: "Designer|";
+    }
+    53%{
+        content: "Designe|";
+    }
+    54%{
+        content: "Design|";
+    }
+    55%{
+        content: "Desig|";
+    }
+    56%{
+        content: "Desi|";
+    }
+    57%{
+        content: "Des|";
+    }
+    58%{
+        content: "De|";
+    }
+    59%{
+        content: "D|";
+    }
+    60%{
+        content: "|";
+    }
+    61%{
+        content: "F|";
+    }
+    62%{
+        content: "Fr|";
+    }
+    63%{
+        content: "Fre|";
+    }
+    64%{
+        content: "Free|";
+    }
+    65%{
+        content: "Freel|";
+    }
+    66%{
+        content: "Freela|";
+    }   
+    67%{
+        content: "Freelan|";
+    }
+    68%{
+        content: "Freelanc|";
+    }   
+    69%{
+        content: "Freelance|";
+    }
+    70%{
+        content: "Freelancer|";
+    }
+    71%{
+        content: "Freelance|";
+    }
+    72%{
+        content: "Freelanc|";
+    }
+    73%{
+        content: "Freelan|";
+    }
+    74%{
+        content: "Freela|";
+    }
+    76%{
+        content: "Freel|";
+    }
+    77%{
+        content: "Free|";
+    }
+    78%{
+        content: "Fre|";
+    }
+    79%{
+        content: "Fr|";
+    }
+    80%{
+        content: "F|";
+    }
+    81%{
+        content: "|";
+    }
+    82%{
+        content: "";
+    }
+}
+/* ==================================end header=================================== */
+/* ==================================start about=================================== */
+.about-img img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.about-info p{
+    color: var(--gray);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.about-info span{
+    color: var(--asblack);
+    font-weight: 600;
+}
+.about-skill h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--asblack);
+}
+.skill-info.progress-bar{
+    background-color: var(--mainColor);
+}
+.skill-info .skill-pre{
+    height: .7rem;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.skill-info h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+    position: relative;
+    width: fit-content;
+}
+.skill-info h5::after{
+    content: "85%";
+    position: absolute;
+    left:110%;
+}
+.skill-info .css::after{
+    content: "70%";
+}
+.skill-info .php::after{
+    content: "50%";
+}
+.skill-info .js::after{
+    content: "90%";
+}
+/* start heading section */
+.about .heading h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about .heading h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 30%;
+    top: 110%;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+/* end heading section */
+.about-desc p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+/* ==================================end about=================================== */
+/* ==================================start service=================================== */
+.service-info span i{
+    background-color: var(--whait);
+    color: var(--asblack);
+    padding: 30px;
+    border: 10px solid var(--mainColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.service-info:hover.service-info span i{
+    color: var(--whait);
+    background-color: var(--mainColor);
+    border: 10px solid var(--bg-border);
+}
+.service-info h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--asblack);
+}
+.service-info p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--gray);
+}
+/* ==================================end service=================================== */
+/* ==================================start dashBord=================================== */
+.dash-bord{
+    background-image: url(../images/dash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.layOut{
+    background-color: var(--bg-lay);
+}
+.dash-bord .card{
+    background-color: transparent;
+}
+.dash-bord{
+    color: var(--whait);
+}
+.dash-bord i{
+    border: 10px solid var(--bg-border);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.dash-bord h5{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.dash-bord p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+/* ==================================end dashBord=================================== */
+/* ==================================start portfolio=================================== */
+.port-img img{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.portfolio-info h5{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--asblack);
+}
+.portfolio-info p{
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--mainColor);
+    display: inline-block;
+}
+.portfolio-info p span{
+    color: var(--gray);
+}
+.portfolio-info .btn-port i{
+    padding:4px 5px;
+    border: 3px solid var(--mainColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.portfolio-info .btn-port:hover{
+    color: var(--mainColor);
+}
+.port-img{
+    overflow: hidden;
+}
+.portfolio-info:hover .port-img img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+/* ==================================end portfolio=================================== */
+/* ==================================start slider=================================== */
+.slider{
+    background-image: url(../images/over-lay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.slider-desc img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slider-desc{
+    color: var(--whait);
+    width: 80%;
+    margin: auto;
+}
+.slider-desc h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.slider-desc p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* =================================end slider=================================== */
+/* ==================================start blog=================================== */
+.blog-img span{
+    position: absolute;
+    top:95%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: var(--mainColor);
+    color: var(--whait);
+    font-size: .7rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.blog-info{
+    border-bottom: 1px solid #ced4da;
+}
+.blog-info h5{
+    color: var(--asblack);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.blog-info p{
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.foot-author img{
+    width: 12%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.foot-author span{
+    color: var(--asblack);
+    font-size: inherit;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.foot-author span:hover{
+    color: var(--mainColor);
+}
+.foot-data{
+    color: var(--gray);
+}
+/* ==================================end blog=================================== */
+/* ==================================start form=================================== */
+.form{
+    background-image: url(../images/over-lay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.form .row{
+    color: var(--whait);
+}
+.form-form .form-control{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+/* start heading section */
+.form .heading h2{
+    font-size: 2rem ;
+    font-weight: 500 ;
+    display: block;
+    width: fit-content;
+}
+
+.form .heading h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 30%;
+    top: 110%;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+/* end heading section */
+.form-form .btn{
+    background-color: var(--mainColor) ;
+    border: 5px solid var(--mainColor);
+    padding: .7rem 1.5rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-size: 1.1rem;
+    color: var(--whait);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.form-form .btn:hover{
+    background-color: var(--bg-lay);
+    border: 5px solid var(--bg-border);
+}
+
+.form-get p {
+    color: var(--gray);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.form-list li{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+.form-list li span{
+    color: var(--mainColor);
+}
+.form-media li a i{
+    font-size: 1.5rem;
+    color: var(--asblack);
+    background-color: transparent;
+    border: 3px solid var(--mainColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.form-media li a i:hover{
+    color: var(--whait);
+    background-color: var(--mainColor);
+    border: 3px solid var(--bg-border);
+}
+/* ==================================end form=================================== */
+/* ==================================start footer=================================== */
+.footer{
+    background-color: var(--mainColor);
+}
+.footer-desc p{
+    color: var(--whait);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-desc p span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* ==================================end footer=================================== */
+
+
+

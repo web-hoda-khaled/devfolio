@@ -1,0 +1,57 @@
+/* ==================================start header=================================== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3.5rem;
+}
+h1::after{
+    font-size: 1.8rem;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    h1{
+        font-size: 3rem;
+}
+h1::after{
+    font-size: 1.8rem;
+}
+}
+/* Medium devices (landscape tablets, 768px to 1000px) */
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    h1{
+        font-size: 3.5rem;
+}
+    h1::after{
+    font-size: 2rem;
+}
+}
+/* ==================================end
+header=================================== */
+/* ==================================start about=================================== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+/* start heading section */
+.about .heading h2{
+    margin: 2.5rem 0;
+}
+/* end heading section */
+}
+/* ==================================end about=================================== */
+/* ==================================start slider=================================== *//* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .slider-desc{
+        width: 100%;
+    }
+
+    .slider-desc p{
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    }
+
+/* =================================end slider=================================== */
+
+
+
+
